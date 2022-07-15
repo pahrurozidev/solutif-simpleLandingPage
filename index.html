@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+        }
+
+        nav,
+        section,
+        aside,
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: .5px solid black;
+        }
+
+        nav {
+            background: #c5c6c7;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        section {
+            background: #bad4eb;
+        }
+
+        .content1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 8;
+        }
+
+        .sidebar1 {
+            grid-row-start: 2;
+            grid-row-end: 5;
+        }
+
+        .sidebar2 {
+            grid-row-start: 5;
+            grid-row-end: 8;
+        }
+
+        .sidebar3 {
+            background: #bad4eb;
+        }
+
+        aside {
+            background: #f4d169;
+        }
+
+        footer {
+            background: #697d9a;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>Header</nav>
+        <section class="content1">Content</section>
+        <section class="content2"></section>
+        <section class="content3"></section>
+        <aside class="sidebar1">Sidebar</aside>
+        <aside class="sidebar2">|</aside>
+        <aside class="sidebar3"></aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>
